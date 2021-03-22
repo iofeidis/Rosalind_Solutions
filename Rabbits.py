@@ -1,8 +1,8 @@
-def fibonnaci(n, k):
+def rabbits(n, k):
     if n == 1 or n == 2:
         return 1
     else:
-        return fibonnaci(n - 1, k) + k * fibonnaci(n - 2, k)
+        return rabbits(n - 1, k) + k * rabbits(n - 2, k)
 
 
-print(fibonnaci(32, 4))
+print(rabbits(32, 4))
